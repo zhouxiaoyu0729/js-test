@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      // 函数返回多个值用逗号隔开  但只会返回最后一个
+
+      //   function getValue(num1, num2) {
+      //     return num1 + num2, num2;
+      //   }
+      //   const res = getValue(3, 5);
+      //   console.log(res);
+
+      //   返回多个值用数组组装返回
+      //   function getValue(num1, num2) {
+      //     return [num1 + num2, num2];
+      //   }
+      //   const res = getValue(3, 5);
+      //   console.log(res);
+
+      //   算术运算
+      //   function getValue(num1, num2) {
+      //     alert(num1 + num2);
+      //   }
+      //   const a = prompt("请输入第一个数") - 0;
+      //   const b = prompt("请输入第二个数") - 0;
+      //   getValue(a,b);
+
+      //   判断最大值
+      // function getValue(num1, num2) {
+      //     if(num1>num2){
+      //         alert(num1);
+      //     }else{
+      //         alert(num2);
+      //     }
+      //   }
+      //   const a = prompt("请输入第一个数") - 0;
+      //   const b = prompt("请输入第二个数") - 0;
+      //   getValue(a,b);
+
+      //   判断最大值并弹出运算结果
+      //   function getValue(num1, num2, num3) {
+      //     if (num1 > num2) {
+      //       if (num1 > num3) {
+      //         alert(num1);
+      //       } else {
+      //         alert(num3);
+      //       }
+      //       alert(num1);
+      //     } else {
+      //       if (num2 > num3) {
+      //         alert(num2);
+      //       } else {
+      //         alert(num3);
+      //       }
+      //       aler;
+      //     }
+      //   }
+      //   const a = prompt("请输入第一个数") - 0;
+      //   const b = prompt("请输入第二个数") - 0;
+      //   const c = prompt("请输入第三个数") - 0;
+      //   getValue(a, b, c);
+
+      // 判断一个数是否是素数(只能被1和自身整除的数)
+      const a = prompt("请输入一个数") - 0;
+
+      function vertifyValue(a) {
+        let flag = false;
+        for (let i = 2; i < a; i++) {
+          if (a % i === 0) {
+            flag = true;
+          }
+        }
+        return flag;
+      }
+      const res = vertifyValue(a);
+      console.log(res);
+      !res && alert(a);
+    </script>
+  </head>
+  <body></body>
+</html>
